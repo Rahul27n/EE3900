@@ -163,6 +163,14 @@ b_{k} &= \frac{1}{\pi}{\int_{-\pi}^{\pi}x(t)\sin{kt}\, dt} = 0\nonumber
 \begin{align}
 x(t) &= \frac{4}{\pi}\sum_{k=1}^{\infty}\frac{\cos{(2k-1)t}}{(2k-1)^{2}}
 \end{align}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth] {Gate_Assignment_4_Fig_1.png}
+    \caption{$x(t)$ vs $t$}
+    \label{Fourier series of x(t)}
+\end{figure}
+
 \item We have a odd periodic function having period $2\pi$ defined in $[0,2\pi]$ as follows :
 \begin{align}
 x(t)=  
@@ -180,6 +188,14 @@ b_{k} &= \frac{1}{\pi}\Bigg({\int_{-\pi}^{0}x(t)\sin{kt}\, dt}+{\int_{0}^{\pi}x(
 &= \frac{2(1-(-1)^{k})}{\pi k}\nonumber \\
 x(t) &= \frac{4}{\pi}\sum_{k=1}^{\infty}\frac{\sin{(2k-1)t}}{2k-1}
 \end{align}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth] {Gate_Assignment_4_Fig_2.png}
+    \caption{$x(t)$ vs $t$}
+    \label{Fourier series of x(t)}
+\end{figure}
+
 \item We have a neither even nor odd periodic function having period $2\pi$ defined in $(-\pi,\pi)$ as follows :
 \begin{align}
 x(t)=  
@@ -198,8 +214,16 @@ a_{k} &= \frac{1}{\pi}\Bigg({\int_{-\pi}^{0}x(t)\cos{kt}\, dt}+{\int_{0}^{\pi}x(
 \begin{align}
 b_{k} &= \frac{1}{\pi}\Bigg({\int_{-\pi}^{0}x(t)\sin{kt}\, dt}+{\int_{0}^{\pi}x(t)\sin{kt}\, dt}\Bigg) \nonumber \\
 &= \frac{2(-1)^{k}+1}{k}\nonumber \\
-x(t) &= -\frac{\pi}{4}-\frac{2}{\pi}\sum_{k=1}^{\infty}\frac{\cos{(2k-1)t}}{(2k-1)^{2}}+\sum_{k=1}^{\infty}\frac{2(-1)^{k}+1}{k}\sin{kt}
+x(t) &= -\frac{\pi}{4}-\frac{2}{\pi}\sum_{k=1}^{\infty}\frac{\cos{(2k-1)t}}{(2k-1)^{2}}+\sum_{k=1}^{\infty}b_{k}\sin{kt}
 \end{align}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth] {Gate_Assignment_4_Fig_3.png}
+    \caption{$x(t)$ vs $t$}
+    \label{Fourier series of x(t)}
+\end{figure}
+
 \item We have a even periodic function having period $2\pi$ defined in $(0,2\pi)$ as follows :
 \begin{align}
 x(t)=  
@@ -217,5 +241,12 @@ b_{k} &= \frac{1}{\pi}{\int_{-\pi}^{\pi}x(t)\sin{kt}\, dt} = 0\nonumber \\
 x(t) &= \frac{\pi}{2}-\frac{4}{\pi}\sum_{k=1}^{\infty}\frac{\cos{(2k-1)t}}{(2k-1)^{2}}
 \end{align}
 \end{enumerate}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth] {Gate_Assignment_4_Fig_4.png}
+    \caption{$x(t)$ vs $t$}
+    \label{Fourier series of x(t)}
+\end{figure}
 Hence the correct answer is option (C).
 \end{document}
